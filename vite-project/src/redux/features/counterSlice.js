@@ -1,7 +1,18 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export const counterSlice = createSlice({
-
+    name: 'counter',
+    initialState: {
+        value: 0
+    },
+    reducers: {
+        increment: (state) => {
+            state.value += 1
+        },
+        decrement: (state) => {
+            state.value -= 1
+        }
+    }
 })
 
-const [first,setfirst] = useState(second)
+const [first, setfirst] = useState(second)
